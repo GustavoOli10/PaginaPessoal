@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="" type="image/jpg" href="" />
+    <title>Dados de Contato</title>
+
+    <style type="text/css">
+        *{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12;
+            font-style: italic;
+        }
+        #menu{
+            background-color: rgb(197, 202, 202);
+            height: 50px;
+            margin-top: 1em;
+        }
+        #rodapePagina
+        {
+            background-color:rgb(197, 202, 202);
+            height: 50px;
+            text-align: center;
+        }
+        #partePrincipal{
+            background-color:ghostwhite;
+        }
+        h2{
+            text-align: center;
+        }
+        form {
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+                border: 1px solid #CCC;
+                border-radius: 1em;
+             }
+        label{
+    
+                display: inline-block;
+                width: 90px;
+                text-align: right;
+              }
+        select{
+                display: inline-block;
+                width: 90px;
+                text-align: right;
+                font: 1em sans-serif;
+                width: 300px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                border: 1px solid #999;
+              }
+      
+        input, textarea {
+   
+                font: 1em sans-serif;
+                width: 300px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                border: 1px solid #999;
+            }
+        input:focus, textarea:focus{
+
+                border-color: #000;
+            }
+        textarea {
+                vertical-align: top;
+                height: 5em;
+                resize: vertical;
+            }
+        .button {
+
+                padding-left: 90px;
+            }
+        button {
+    
+                margin-left: .5em;
+            }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <header>
+            <i><b>Menu</b></i>
+            <nav>
+                    <a href="file:///C:/Users/gustavo.soares/Desktop/ATIVIDADE/PaginaPessoal/Index.html">Dados pessoais</a>
+                    <a href="file:///C:/Users/gustavo.soares/Desktop/ATIVIDADE/PaginaPessoal/Escolaridade.html">Escolaridade</a>>
+                    <a href="file:///C:/Users/gustavo.soares/Desktop/ATIVIDADE/PaginaPessoal/DadosProfissionais.html">Dados profissionais</a>
+                    <a href="file:///C:/Users/gustavo.soares/Desktop/ATIVIDADE/PaginaPessoal/Disciplinas.html">Disciplinas</a>>
+            </nav>  
+        </header>
+    </div>
+
+    <div id="partePrincipal">
+
+        <h2>Deixe sua mensagem ao suporte da página</h2>
+
+        <form action="mailto:gustavo.soa10@gmail.com" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input name="nome" required="required" type="text" id="nome" />
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input name="telefone" required="required" type="number" id="numero" />
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input name="email" required="required" type="email" id="email" />
+            </div>
+            <div>
+                <label for="motivo">Motivo:</label>
+                <select name="Motivodocontato">
+                    <option value="selecione">Selecione o motivo do contato</option>
+                    <option value="erro">Erro técnico</option>
+                    <option value="duvida">Duvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="solicitacao">Solicitação</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Comentarios Gerais:</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar sua mensagem</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <footer id="rodapePagina">
+        <p>Desenvolvido por Gustavo Oliveira</p>
+    </footer>
+</body>
+
+</html>
